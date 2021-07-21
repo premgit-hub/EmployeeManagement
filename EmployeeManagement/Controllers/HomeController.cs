@@ -13,7 +13,7 @@ namespace EmployeeManagement.Controllers
         private IEmployeeRepository _employeeRepository;
         public HomeController(IEmployeeRepository employeeRepository)
         {
-            //_employeeRepository = employeeRepository;
+            _employeeRepository = employeeRepository;
         }
 
         //[Route("")]
