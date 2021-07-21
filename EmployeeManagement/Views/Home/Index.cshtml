@@ -1,12 +1,30 @@
-﻿@using Microsoft.Extensions.Configuration
-@inject IConfiguration Configuration
+﻿@model IEnumerable<EmployeeManagement.Models.Employee>
 
-@{ 
+@{
     Layout = "../Shared/_Layout.cshtml";
     ViewData["Title"] = "Employee Home";
 }
 
-
-This is test Razor view page
-@Model.employee.Name
-@Model.PageTitle
+<div class="card-deck">
+    <table>
+        <thead class="card-header">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody class="card-body">
+            @foreach (var employee in Model)
+            {
+            <tr class="card-columns">
+                <td class="card-columns">@employee.Id</td>
+                <td class="card-columns">@employee.Name</td>
+                <td class="card-columns">@employee.Department</td>
+                <td class="card-columns">@employee.Email</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

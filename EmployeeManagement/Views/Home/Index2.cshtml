@@ -1,0 +1,12 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+@{ 
+    Layout = "../Shared/_Layout.cshtml";
+    ViewData["Title"] = "Employee Home";
+}
+
+
+This is test Razor view page
+@Model.employee.Name
+@Model.PageTitle

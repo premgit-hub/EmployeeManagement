@@ -21,19 +21,15 @@ namespace EmployeeManagement.Controllers
         //[Route("Home/Index")]
         public IActionResult Index()
         {
-            HomeDetailsViewmodel homeDetailsViewmodel = new HomeDetailsViewmodel()
-            {
-                employee = _employeeRepository.GetEmployee(1),
-                PageTitle = "Employee Details"
-            };
+            var model = _employeeRepository.GetEmployees();
+            return View(model);
+        }
 
-            //if (Request.ContentType == "application/xml")
-            //ViewData["Employee"] = employee;
-            return View(homeDetailsViewmodel);
-           
-        }       
-
-
+        public IActionResult Create()
+        {
+            //var model = _employeeRepository.GetEmployees();
+            return View();
+        }
         //[Route("Home")]
         //public string Index1()
         //{

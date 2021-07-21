@@ -29,7 +29,7 @@ namespace EmployeeManagement.Models
             return context.Employees.Find(Id);
         }
 
-        IEnumerable<Employee> IEmployeeRepository.GetEmployee()
+        IEnumerable<Employee> IEmployeeRepository.GetEmployees()
         {
             return context.Employees;
         }

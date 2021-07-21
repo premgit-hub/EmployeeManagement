@@ -12,7 +12,9 @@ namespace EmployeeManagement.Models
         {
             _employeeList = new List<Employee>()
             {
-                new Employee() {Id = 1 , Name =  "Prem"}                
+                new Employee() {Id = 1 , Name =  "Prem", Department = Dept.HR, Email = "prem@boa.com"}, 
+                new Employee() {Id = 2 , Name =  "Karthik", Department = Dept.IT, Email = "karthik@boa.com"},
+                new Employee() {Id = 3 , Name =  "Vivek", Department = Dept.Payroll, Email = "vivek@boa.com"}
             };
         }
         public Employee GetEmployee(int Id)
@@ -30,9 +32,9 @@ namespace EmployeeManagement.Models
             return employee;
         }
 
-        IEnumerable<Employee> IEmployeeRepository.GetEmployee()
+        IEnumerable<Employee> IEmployeeRepository.GetEmployees()
         {
-            throw new NotImplementedException();
+            return _employeeList;
         }
 
         Employee IEmployeeRepository.Update(Employee employeeChanges)
