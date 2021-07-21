@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\projects\\employeemanagement\\EmployeeManagement\\EmployeeManagement.csproj": {}
+    "C:\\Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj": {}
   },
   "projects": {
-    "C:\\projects\\employeemanagement\\EmployeeManagement\\EmployeeManagement.csproj": {
+    "C:\\Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\projects\\employeemanagement\\EmployeeManagement\\EmployeeManagement.csproj",
+        "projectUniqueName": "C:\\Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
         "projectName": "EmployeeManagement",
-        "projectPath": "C:\\projects\\employeemanagement\\EmployeeManagement\\EmployeeManagement.csproj",
+        "projectPath": "C:\\Projects\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
         "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\projects\\employeemanagement\\EmployeeManagement\\obj\\",
+        "outputPath": "C:\\Projects\\EmployeeManagement\\EmployeeManagement\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
