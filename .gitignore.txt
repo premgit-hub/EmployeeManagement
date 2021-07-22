@@ -1,2 +1,9 @@
-obj/
-bin/
+.* 
+!.gitignore 
+*.log 
+… 
+obj
+bin
+*.sln
+*.v2
+*.suo
